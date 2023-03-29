@@ -13,8 +13,8 @@ export default function Home() {
       </Head>
       <main className="w-full max-w-3xl mx-auto text-white">
         <div className="h-screen relative flex flex-col gap-y-8 p-8 justify-center items-center text-center font-mono text-xl lg:text-3xl">
-          <p className="w-[33ch] text1">Hello 👋🏼 I'm glad you're here!</p>
-          <p className="w-[30ch] text2">Let me tell you a story.</p>
+          <p className="w-[30ch] text1">Hello 👋🏼 I'm glad you're here!</p>
+          <p className="w-[25ch] text2">Let me tell you a story.</p>
           <p className="w-[20ch] text3">Once upon a time...</p>
           <div className="text4 mt-12">
             <p className="leading-relaxed">
