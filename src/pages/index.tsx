@@ -16,12 +16,10 @@ export default function Home() {
           <p className="w-[30ch] text1">Hello 👋🏼 I'm glad you're here!</p>
           <p className="w-[25ch] text2">Let me tell you a story.</p>
           <p className="w-[20ch] text3">Once upon a time...</p>
-          <div className="text4 mt-12">
-            <p className="leading-relaxed">
-              Just kidding, scroll down and you'll find everything you'll need
-              to know.
-            </p>
-          </div>
+          <p className="text4 mt-12 leading-relaxed">
+            Just kidding, scroll down and you'll find everything you'll need to
+            know.
+          </p>
           <button
             className="absolute left-1/2 bottom-0 -translate-x-1/2 opacity-50 hover:opacity-100 transition-opacity duration-200"
             onClick={() =>
