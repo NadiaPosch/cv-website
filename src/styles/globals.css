@@ -1,13 +1,98 @@
 @tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 body {
   transition: background-color 1s ease;
-  background: radial-gradient(#0077b6, #03045e, #2c0053);
+  background: radial-gradient(#004f94, #000428);
   background-size: 400% 400%;
-  animation: gradient 10s ease infinite;
+  animation: gradient 20s ease infinite;
   height: 100vh;
+}
+
+.text1,
+.text2,
+.text3 {
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid white;
+}
+
+.text1 {
+  animation: text1 4s steps(30), hideCaret 1s step-end 3s forwards;
+}
+
+.text2 {
+  opacity: 0;
+  animation: text2 4s steps(25) 4s forwards, hideCaret 1s step-end 7s forwards;
+}
+
+.text3 {
+  opacity: 0;
+  animation: text3 3s steps(20) 8s forwards, hideCaret 1s step-end 10s forwards;
+}
+
+.text4 {
+  opacity: 0;
+  animation: text4 500ms ease-in 12s forwards;
+}
+
+@keyframes text1 {
+  0% {
+    width: 0;
+  }
+  80% {
+    width: 30ch;
+  }
+  100% {
+    width: 30ch;
+  }
+}
+
+@keyframes text2 {
+  0% {
+    opacity: 1;
+    width: 0;
+  }
+  80% {
+    opacity: 1;
+    width: 25ch;
+  }
+  100% {
+    opacity: 1;
+    width: 25ch;
+  }
+}
+
+@keyframes text3 {
+  0% {
+    opacity: 1;
+    width: 0;
+  }
+  80% {
+    opacity: 1;
+    width: 20ch;
+  }
+  100% {
+    opacity: 1;
+    width: 20ch;
+  }
+}
+
+@keyframes text4 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes hideCaret {
+  from {
+    border-color: white;
+  }
+  to {
+    border-color: transparent;
+  }
 }
 
 @keyframes gradient {
@@ -18,6 +103,9 @@ body {
     background-position: 100% 50%;
   }
   100% {
-    background-position: 0% 00%;
+    background-position: 0% 0%;
   }
 }
+
+@tailwind components;
+@tailwind utilities;
