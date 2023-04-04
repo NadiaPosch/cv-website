@@ -1,3 +1,4 @@
+import { Accordion } from "@/components/accordion";
 import { ChevronDown } from "@/components/icons";
 import { Section } from "@/components/section";
 import Head from "next/head";
@@ -29,7 +30,15 @@ export default function Home() {
             <ChevronDown className="w-20 h-20" />
           </button>
         </div>
-        <Section>Hello</Section>
+        <Section>
+          <Accordion
+            items={[
+              { title: "Title 1", content: "hello" },
+              { title: "Title 2", content: "hello" },
+              { title: "Title 3", content: "hello" },
+            ]}
+          />
+        </Section>
       </main>
     </>
   );
